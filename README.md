@@ -1,8 +1,6 @@
 # Basic Real-Time Chat Application
 #### Enable user to participate in a free, open chat channel. Any user can enter the application and start chatting with other users in a public chat channel
 
-**Live Demo:** [Simple Chat App](https://).
-
 ### Installation
 1. Clone the repo
 2. `npm install`
