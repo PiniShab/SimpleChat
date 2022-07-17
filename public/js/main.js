@@ -44,6 +44,7 @@ document.getElementById('chat-form').addEventListener('submit', (e) => {
     const msg = e.target.elements.msg;
     socket.emit('chatMessage', msg.value);
     msg.value = '';
+    msg.focus(); // For mouse click on Send
 });
 
 document.getElementById('settings').addEventListener('click', toggleSettingsOptions);
