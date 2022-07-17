@@ -20,7 +20,7 @@ io.on('connection', socket => {
         
         socket.emit('message', formatMessage(botName, 'Welcome to the chat!', 'initial', user.id));
 
-        socket.broadcast.to().emit('message', formatMessage(botName, `${user.username} has joined.`, 'initial', user.id));
+        socket.broadcast.emit('message', formatMessage(botName, `${user.username} has joined.`, 'initial', user.id));
         // Send users info as an event payload to the frontend
         io.emit('chatUsers', {            
             users: getUsers()
