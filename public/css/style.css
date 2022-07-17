@@ -128,7 +128,6 @@ a {
 
 .myMessageWrapper {
 	align-items: flex-end;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -269,8 +268,17 @@ a {
 }
 
 @media (max-width: 700px) {
+	.chat-container {
+		height: auto;
+	}
+
 	.chat-main {
 		display: block;
+		flex: none;
+	}
+
+	.chat-messages {
+		max-height: 300px;
 	}
 
 	.chat-sidebar {
